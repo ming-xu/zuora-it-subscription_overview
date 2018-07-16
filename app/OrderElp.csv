@@ -1,0 +1,8 @@
+OrderElp.CreatedDate,OrderElp.StartDate,OrderElp.EndDate,OrderElp.Value,OrderElp.Type,OrderElp.GeneratedReason,Subscription.Name,SubscriptionVersionAmendment.Code,RatePlanCharge.ChargeNumber,RatePlanCharge.Name,OrderAction.Type,Order.OrderNumber,Account.Name,Account.Currency
+2018-03-26T20:36:15-0700,12/31/19,12/30/20,60000,Regular,IncreaseQuantity,A-S00008317,A-AM00029207,C-00043230,Committed Volume,UpdateProduct,O-00029860,CLEAR,USD
+2018-03-26T20:35:41-0700,12/31/17,12/30/20,21000,Regular,Extension,A-S00008317,A-AM00036692,C-00043235,Seats,CreateSubscription,O-00028963,CLEAR,USD
+2018-03-26T20:35:41-0700,12/31/17,12/30/20,60000,Regular,Extension,A-S00008317,A-AM00036692,C-00043232,Add-on Module,CreateSubscription,O-00028963,CLEAR,USD
+2018-03-26T20:35:41-0700,12/31/17,12/30/20,45000,Regular,Extension,A-S00008317,A-AM00036692,C-00043233,Connect,CreateSubscription,O-00028963,CLEAR,USD
+2018-03-26T20:35:41-0700,12/31/17,12/30/20,150000,Regular,Extension,A-S00008317,A-AM00036692,C-00043234,Connect,CreateSubscription,O-00028963,CLEAR,USD
+2018-03-26T20:35:41-0700,12/31/17,12/30/20,1680000,Regular,Extension,A-S00008317,A-AM00036692,C-00043230,Committed Volume,CreateSubscription,O-00028963,CLEAR,USD
+2018-03-26T20:35:41-0700,12/31/17,12/30/20,150000,Regular,Extension,A-S00008317,A-AM00036692,C-00043229,Platform Fee,CreateSubscription,O-00028963,CLEAR,USD
