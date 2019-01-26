@@ -29,7 +29,7 @@ end
 # unset irrelevant variables
 deactivate nondestructive
 
-set -gx VIRTUAL_ENV "/Users/bcraft/Documents/subscription_overview/venv"
+set -gx VIRTUAL_ENV "/Users/mxu/Work/zuora-it-subscription_overview/venv"
 
 set -gx _OLD_VIRTUAL_PATH $PATH
 set -gx PATH "$VIRTUAL_ENV/bin" $PATH

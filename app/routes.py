@@ -3,7 +3,7 @@ import pandas as pd
 from datetime import timedelta
 
 # Load and Clean Up Data Frame
-df = pd.read_csv('/Users/bcraft/Documents/subscription_overview/app/OrderMrr.csv')
+df = pd.read_csv('~/Work/zuora-it-subscription_overview/app/OrderMrr.csv')
 
 
 df = df.rename(index=str, columns={"OrderMrr.StartDate": "StartDate", "OrderMrr.EndDate": "EndDate",
@@ -152,7 +152,7 @@ for index, row in df.iterrows():
 df['MrrTotal'] = MrrTotal
 
 # Load and Clean Up Elp Dataframe
-Elp_df = pd.read_csv('/Users/bcraft/Documents/subscription_overview/app/OrderElp.csv')
+Elp_df = pd.read_csv('~/Work/zuora-it-subscription_overview/app/OrderElp.csv')
 Elp_df = Elp_df.drop(columns=["OrderElp.Type", "OrderElp.GeneratedReason", "Subscription.Name",
                               "SubscriptionVersionAmendment.Code", "RatePlanCharge.Name", "OrderAction.Type",
                               "Order.OrderNumber", "OrderElp.CreatedDate"])
@@ -169,7 +169,7 @@ df = pd.merge(df, Elp_df, how='left', on=['ChargeNumber', 'StartDate', 'EndDate'
 df = df.fillna(0)
 
 # #Load and Clean Up TCB Dataframe
-TCB_df = pd.read_csv('/Users/bcraft/Documents/subscription_overview/app/OrderTcb.csv')
+TCB_df = pd.read_csv('~/Work/zuora-it-subscription_overview/app/OrderTcb.csv')
 TCB_df = TCB_df.drop(columns=["OrderTcb.Type", "OrderTcb.GeneratedReason", "Subscription.Name",
                               "SubscriptionVersionAmendment.Code", "RatePlanCharge.Name", "Order.OrderNumber"])
 TCB_df = TCB_df.rename(index=str, columns={"OrderTcb.StartDate": "StartDate", "OrderTcb.EndDate": "EndDate",
@@ -227,7 +227,7 @@ df = pd.merge(df, TCB_df, how='left', on=['ChargeNumber', 'StartDate', 'EndDate'
 df["TCBTotal"] = df["MrrTotal"] * df["ChargeLength"]
 
 # #Load and Clean Up Quantity Dataframe
-Quantity_df = pd.read_csv('/Users/bcraft/Documents/subscription_overview/app/OrderQuantity.csv')
+Quantity_df = pd.read_csv('~/Work/zuora-it-subscription_overview/app/OrderQuantity.csv')
 
 Quantity_df = Quantity_df.drop(columns=["RatePlanCharge.Name", "Account.Name", "Account.Currency",
                                         "SubscriptionVersionAmendment.Code", "Subscription.Name",
